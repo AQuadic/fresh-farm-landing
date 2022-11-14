@@ -11,6 +11,7 @@ Frontend Made by [AQuadic](https://aquadic.com)
 ## Important Links
 
 - [AQuadic](https://aquadic.com)
+- [Design](https://www.figma.com/proto/o6wOMGvyb3IQa9wlqpYfir/Fresh-Farm-Landing-Page?node-id=3%3A8&scaling=min-zoom&page-id=0%3A1)
 - [Live Site](https://aquadic.github.io/fresh-farm-landing/index.html)
 
 ## Installation
