@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en" dir="rtl">
+  <head >
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,8 +32,10 @@
 />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
+  </head> 
+  
   <body>
+    
     <nav class="navbar navbar-expand-lg container">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
@@ -135,12 +137,12 @@
     </section>
     <section class="best container">
       <div class="part">
-        <div class="one">
+        <div class="one" id="one">
           <h2>
             Our best <br />
             seller product
           </h2>
-          <button>See all product <img src="./images/Vector 11.svg" /></button>
+          <button>See all product <img src="./images/Vector 11.svg" alt="order" /></button>
         </div>
         <div class="two">
           <div class="owl-carousel owl-theme">
@@ -167,7 +169,7 @@
     <section class="quality container">
       <div class="all">
         <img src="./images/Rectangle 632.svg" alt="" />
-        <div class="about">
+        <div class="about " id="rtl">
           <h2>We only provide the best quality for you</h2>
 
           <p>
@@ -195,7 +197,7 @@
     <section id="category" class="order container">
       <div class="part1">
         <img src="./images/Rectangle 633.svg" alt="" />
-        <div class="about">
+        <div class="about" id="rtl">
           <h2>Need To</h2>
           <h3>Home Farming</h3>
           <button>
@@ -205,7 +207,7 @@
       </div>
       <div class="part2">
         <img src="./images/Rectangle 633 (1).svg" alt="" />
-        <div class="about">
+        <div class="about" id="rtl">
           <h2>Premium Quality</h2>
           <h3>Duck Eggs</h3>
           <button>Order now <img src="./images/Vector 11.svg" alt="" /></button>
@@ -239,23 +241,23 @@
     <section class="custome container">
       <div class="part">
         <img src="./images/Rectangle 633 (2).svg" alt="" srcset="" />
-        <div class="about">
+        <div class="about" id="rtl">
           <div class="two">
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" id="rtl">
                   <h3>“</h3>
                   <p>all the items I ordered arrived safely at home, everything was exactly the same as what I ordered. highly recommended for those of you who have never shopped online because it is very guaranteed quality and safety</p>
                   <h4>Sultan Al Mansoori</h4>
                   <p>VIP  customer</p>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" id="rtl">
                   <h3>“</h3>
                   <p>all the items I ordered arrived safely at home, everything was exactly the same as what I ordered. highly recommended for those of you who have never shopped online because it is very guaranteed quality and safety</p>
                   <h4>Sultan Al Mansoori</h4>
                   <p>VIP  customer</p>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" id="rtl">
                   <h3>“</h3>
                   <p>all the items I ordered arrived safely at home, everything was exactly the same as what I ordered. highly recommended for those of you who have never shopped online because it is very guaranteed quality and safety</p>
                   <h4>Sultan Al Mansoori</h4>
@@ -287,7 +289,7 @@
           </p>
           <button>Send Now</button>
         </div>
-        <div class="part2"><img src="./images/Rectangle 634.svg" alt="" /></div>
+        <div class="part2" id="right"><img src="./images/Rectangle 634.svg" alt="" /></div>
       </div>
     </section>
 
@@ -418,6 +420,40 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+    <script>
+      var styleElem = document.head.appendChild(document.createElement("style"));
+      const all =document.querySelectorAll("#rtl")
+const ri = document.getElementById("right");
+const one = document.getElementById("one");
+
+const handeldir =()=>{
+  for (let i = 0; i <all.length; i++) {
+  
+    if(document.dir==="rtl"){
+ri.style.right="auto";
+ri.style.left="0";
+styleElem.innerHTML = "#one:before {left: 75px;}";
+  all[i].classList.add("dir-rtl")
+}
+else{
+ri.classList.remove("r-56");
+
+  all[i].classList.remove("dir-rtl")
+}
+  }
+}
+
+console.log(all);
+
+window.onload=function(){
+  
+  handeldir()
+}
+window.onchange=handeldir()
+
+
+
     </script>
   </body>
 </html>
