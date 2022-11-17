@@ -1356,3 +1356,11 @@ max-width: 220px;
  
   font-size: 24px;
 }
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 0px;
+  right: auto;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 0px;
+  left: auto;
+}
