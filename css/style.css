@@ -2,13 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Manrope";
+ 
 }
 body {
-  background-image: url(../images/Spikes\ Pattern.svg);
-  background-color: #f3b401;
+  background-image: linear-gradient( #FFE700, #FFBF00);
+
   opacity: 3;
   position: relative;
+  font-family: "Manrope";
 }
 html::-webkit-scrollbar {
   width: 8px;
@@ -1214,7 +1215,7 @@ footer .bottom-details .bottom_text {
   }
 }
 @media (max-width: 768px) {
- footer .row {
+  footer .row {
     flex-direction: column;
   }
   .col {
@@ -1290,33 +1291,33 @@ footer .bottom-details .bottom_text {
   left: auto;
 }
 /*satrt step 1*/
-.step1{
-  height: 100vh;
-max-width: 500px;
-margin: auto;
-margin-top: 70px;
+.step1 {
+  
+  max-width: 500px;
+  margin: auto;
+  margin-top: 70px;
 }
-.step1 h3{
+.step1 h3 {
   font-weight: 700;
-font-size: 24px;
-line-height: 33px;
+  font-size: 24px;
+  line-height: 33px;
 }
-.step1 span{
+.step1 span {
   font-weight: 700;
-font-size: 24px;
-line-height: 33px;
-display: inline-block;
-color: #282828;
+  font-size: 24px;
+  line-height: 33px;
+  display: inline-block;
+  color: #282828;
 
-opacity: 0.5;
+  opacity: 0.5;
 }
-.step1 h2{
+.step1 h2 {
   font-weight: 700;
-font-size: 36px;
-line-height: 49px;
-
+  font-size: 36px;
+  line-height: 49px;
 }
-.step1 .add-logo,.step2 .add-logo{
+.step1 .add-logo,
+.step2 .add-logo {
   max-width: 112px;
   max-height: 112px;
   position: relative;
@@ -1324,33 +1325,32 @@ line-height: 49px;
   text-align: center;
   margin-bottom: 7px;
 }
-.step1 .add-logo img,.step2 .add-logo img{
+.step1 .add-logo img,
+.step2 .add-logo img {
   width: 100%;
 }
-.step1 .add-logo .img-plus,.step2 .add-logo .img-plus{
+.step1 .add-logo .img-plus,
+.step2 .add-logo .img-plus {
   position: absolute;
   width: 40px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.step1 p{
+.step1 p {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
   /* identical to box height */
   text-align: center;
   margin: auto;
- 
-  
+
   color: #282828;
   margin-bottom: 20px;
   opacity: 0.5;
 }
 
-
-
-.head h2{
+.head h2 {
   font-size: 20px;
   margin-bottom: 0px;
 }
@@ -1359,11 +1359,11 @@ line-height: 49px;
   margin-bottom: 12px;
   font-size: 34px;
 }
-.head p{
+.head p {
   font-weight: bold;
   text-align: start;
 }
-.row{
+.row {
   margin: auto;
 }
 label.form-label {
@@ -1372,21 +1372,16 @@ label.form-label {
   margin-bottom: 4px;
 }
 .form-select {
- 
-  
   border-radius: 12px 0px 0px 12px;
-  
 }
-.form-control ,.form-select{
+.form-control,
+.form-select {
   height: 50px;
   border-radius: 6px;
   margin-bottom: 18px;
 }
 .form-select {
- 
-  
   border-radius: 12px 0px 0px 12px;
-  
 }
 .btn-up {
   height: 58px;
@@ -1397,13 +1392,12 @@ label.form-label {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.btn-su{
+.btn-su {
   color: black;
   font-size: 24px;
   font-weight: 800;
-
 }
-.sub{
+.sub {
   margin-top: 60px;
 }
 option {
@@ -1416,22 +1410,20 @@ option {
   font-weight: 500;
   text-decoration: underline;
 }
-.ch{
+.ch {
   padding: 0;
 }
-.up{
-text-align: center;
-color: #282828;
+.up {
+  text-align: center;
+  color: #282828;
 }
-.up h2{
+.up h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
   margin-top: 36px;
- 
-  
 }
-.up p{
+.up p {
   font-weight: 400;
   font-size: 36px;
   line-height: 49px;
@@ -1439,22 +1431,21 @@ color: #282828;
   opacity: 1;
   margin: 38px auto;
 }
-.up form{
-
+.up form {
 }
-.up form button{
+.up form button {
   width: 224px;
   height: 48px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
   margin: auto;
-  color: #F1F1F1;
+  color: #f1f1f1;
   background: #282828;
   border-radius: 4px;
 }
 
-.link-active{
+.link-active {
   border-bottom: 3px solid;
 }
 .subb {
@@ -1464,12 +1455,15 @@ color: #282828;
   margin: auto;
   display: block;
 }
-.step2{
+.step2 {
   height: 100vh;
   max-width: 800px;
-margin: auto;
-margin-top: 70px;
-width: 100%;
-    height: 100%;
+  margin: auto;
+  margin-top: 70px;
+  width: 100%;
+
 }
 /*end step 1*/
+[type=email], [type=number], [type=tel], [type=url] {
+  direction: inherit;
+}
