@@ -4,6 +4,10 @@
   box-sizing: border-box;
  
 }
+@font-face {
+  font-family: TS Safaa;
+  src: url(/webfonts/TSSafaa-Regular.otf);
+}
 body {
   background-image: linear-gradient( #FFE700, #FFBF00);
 
