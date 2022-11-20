@@ -1381,6 +1381,9 @@ label.form-label {
   margin-bottom: 18px;
 }
 .form-select {
+  border-radius: 6px;
+}
+#state{
   border-radius: 12px 0px 0px 12px;
 }
 .btn-up {
@@ -1467,6 +1470,9 @@ option {
 [type=email], [type=number], [type=tel], [type=url] {
   direction: inherit;
 }
-html[dir=rtl] .form-select {
+html[dir=rtl] #state {
   border-radius: 0px 12px 12px 0px;
+}
+html[dir=rtl] body {
+  font-family: "Poppins";
 }
