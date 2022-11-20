@@ -1467,3 +1467,6 @@ option {
 [type=email], [type=number], [type=tel], [type=url] {
   direction: inherit;
 }
+html[dir=rtl] .form-select {
+  border-radius: 0px 12px 12px 0px;
+}
