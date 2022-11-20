@@ -889,12 +889,16 @@ button.owl-prev {
 .join .part1 button:hover {
   border: 1px solid white;
 }
-.join .part2 {
+html[dir=ltr] .join .part2 {
   position: absolute;
   top: 0;
   right: 0%;
 }
-
+html[dir=rtl] .join .part2{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 @media (max-width: 1300px) {
   .join {
     padding: 20px 0px;
