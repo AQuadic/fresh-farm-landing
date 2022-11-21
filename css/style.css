@@ -26,7 +26,7 @@ body {
   position: relative;
   font-family: "Manrope";
 }
-p{
+html[dir=rtl] p{
   font-family: Ts Safaa2;
 }
 
@@ -1103,7 +1103,7 @@ footer {
 .col {
   min-width: 250px;
   color: #f2f2f2f2;
-  font-family: poppins;
+
   padding: 0 2rem;
 }
 .logo_brand {
