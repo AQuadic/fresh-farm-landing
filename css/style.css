@@ -916,9 +916,10 @@ html[dir=rtl] .join .part2{
     flex-wrap: wrap;
     gap: 10px;
   }
-  .join .part2 {
+  html[dir=ltr] .join .part2 ,html[dir=rtl] .join .part2{
     position: initial;
   }
+  
 }
 @media (max-width: 590px) {
   .join .part1 {
